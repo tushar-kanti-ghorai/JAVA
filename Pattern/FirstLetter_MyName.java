@@ -15,5 +15,6 @@ public class FirstLetter_MyName {
 		 }
 		 System.out.println();
 	 }
+	 sc.close();
  }
 }
