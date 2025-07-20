@@ -12,7 +12,7 @@ public class Perfect_num {
   }
   
   public static boolean isPerfect(int num,int i,int sum) {
-	  if(i==0) return sum==num;
+	  if(i<1) return sum==num;
 	  if(num%i==0) {
 		  sum+=i;
 	  }

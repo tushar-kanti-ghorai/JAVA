@@ -9,6 +9,7 @@ public class Emrip_num {
 		int n = sc.nextInt();
 		System.out.println(isEmrip(n));
 		sc.close();
+		
 	}
 
 	public static boolean isEmrip(int n) {

@@ -31,6 +31,6 @@ public class AlphaNumeric_Triangle_Pattern {
 				  st+=2;
 			  }
 			  sc.close();
-		  }
+		  }}
 
-}
+
