@@ -12,7 +12,7 @@ public class ArmstrongNumber {
 
     public static boolean isArmstrong(int n) {
         int count = countDigits(n);
-        int sum = calcArmstrongSum(n, count);
+        int sum = calcArmstrongSum(n, count ,0);
         return sum == n;
     }
 
@@ -27,8 +27,9 @@ public class ArmstrongNumber {
         return base * power(base, exp - 1);
     }
 
-    public static int calcArmstrongSum(int n, int count) {
-        if (n == 0) return 0;
-        return power(n%10, count) + calcArmstrongSum(n / 10, count);
+    public static int calcArmstrongSum(int n, int count,int sum) {
+        if (n == 0) return sum;
+        sum+=power(n%10, count);
+        return calcArmstrongSum(n / 10, count,sum);
     }
 }

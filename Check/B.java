@@ -9,7 +9,7 @@ public class B {
 		byte b=sc.nextByte();
 		float c=sc.nextFloat();
 		long l=sc.nextLong();
-		
+		float f=10.55f;
 		String s=sc.nextLine();
 		
 		
